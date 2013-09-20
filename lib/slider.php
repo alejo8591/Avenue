@@ -1,13 +1,15 @@
 <script type="text/javascript">
-
+/*
+	motion gives it the attribute "auto": true
+*/
  jQuery(document).ready(function(){
     jQuery('#pslider').bxSlider({
 	  mode: 'fade',
+	  auto: true,
 	  controls:false,
 	  pager: true
 	});
   });
-
 </script>
 
 
