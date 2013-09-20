@@ -10,11 +10,11 @@
 <div class="archimg">
 
 <?php  if( has_term( 'featured', 'type', $post->ID ) ) { ?>
-<span class="featspan">Featured</span>
+<span class="featspan">Arriendo</span>
 <?php } else if ( has_term( 'sold', 'type', $post->ID ) ){ ?>
-<span class="soldspan">Sold</span>
+<span class="soldspan">Venta</span>
 <?php } else if ( has_term( 'reduced', 'type', $post->ID ) ){ ?>
-<span class="redspan">Reduced</span>
+<span class="redspan">Remate</span>
 <?php } ?>
 
 <?php
@@ -29,14 +29,14 @@
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 </div>
 <div class="propmeta">
-	<div class="proplist"><span>Price</span> <span class="propval"> <?php $price=get_post_meta($post->ID, 'wtf_price', true); echo $price; ?></span></div>
-	<div class="proplist"><span>Location</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'location', '', ' ', '' ); ?></span></div>
-	<div class="proplist"><span>Property type</span> <span class="propval"><?php echo get_the_term_list( $post->ID, 'property', '', ' ', '' ); ?></span></div>
-	<div class="proplist"><span>Area</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'area', '', ' ', '' ); ?></span></div>
+	<div class="proplist"><span>Precio</span> <span class="propval"> <?php $price=get_post_meta($post->ID, 'wtf_price', true); echo $price; ?></span></div>
+	<div class="proplist"><span>Ubicación</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'location', '', ' ', '' ); ?></span></div>
+	<div class="proplist"><span>Tipo de Propiedad</span> <span class="propval"><?php echo get_the_term_list( $post->ID, 'property', '', ' ', '' ); ?></span></div>
+	<div class="proplist"><span>Area en mts. Cuadrados</span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'area', '', ' ', '' ); ?></span></div>
 </div>
 	<div class="entry">
 		<?php wpe_excerpt('wpe_excerptlength_archive', ''); ?>
-		<a class="morer" href="<?php the_permalink() ?>">Check this listing</a>
+		<a class="morer" href="<?php the_permalink() ?>">Verificar esta lista...</a>
 		<div class="clear"></div>
 	</div>
 
@@ -48,8 +48,8 @@
 
 <?php else : ?>
 
-	<h1 class="title">Not Found</h1>
-	<p>Sorry, but you are looking for something that isn't here.</p>
+	<h1 class="title">No se ha encontrado</h1>
+	<p>Lo sentimos, pero usted está buscando algo que no está aquí.</p>
 
 <?php endif; ?>
 
