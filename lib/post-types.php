@@ -178,8 +178,8 @@ function create_bedrooms_taxonomy()
 $labels = array(
 	  						  'name' => _x( 'Cuartos', 'taxonomy general name' ),
     						  'singular_name' => _x( 'Cuartos', 'taxonomy singular name' ),
-    						  'search_items' =>  __( 'Search Bedrooms' ),
-   							  'all_items' => __( 'All Bedrooms' ),
+    						  'search_items' =>  __( 'Buscar por Cuartos' ),
+   							  'all_items' => __( 'Toda la cantidad de Cuartos' ),
     						  'parent_item' => __( 'Parent Bedrooms' ),
    					   		  'parent_item_colon' => __( 'Parent Bedrooms' ),
    							  'edit_item' => __( 'Editar caracteristica de Cuartos' ), 
