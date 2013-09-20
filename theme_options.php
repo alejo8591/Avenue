@@ -359,7 +359,6 @@ case "checkbox":
 <input type="hidden" name="action" value="reset" />
 </p>
 </form>
-<p style="text-align:right;"> <small> WordPress themes from <a href="http://www.fabthemes.com/">FabThemes.com</a> </small>
 </div>
 <?php
 }
