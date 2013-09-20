@@ -11,8 +11,8 @@
 </div>
 
 <div class="postmeta">
-		<span class="author">Posted by <?php the_author(); ?> </span>
-		<span class="clock"> Posted on <?php the_time('M - j - Y'); ?></span>
+		<span class="author">Publicado por <?php the_author(); ?> </span>
+		<span class="clock"> Publicado en <?php the_time('M - j - Y'); ?></span>
 		<span class="comm"><?php comments_popup_link('0 Comment', '1 Comment', '% Comments'); ?></span>
 </div>
 
@@ -26,7 +26,7 @@
 
 
 <div class="singleinfo">
-<span class="category">Categories: <?php the_category(', '); ?> </span>
+<span class="category">Categorías: <?php the_category(', '); ?> </span>
 </div>
 
 </div>
@@ -34,8 +34,8 @@
 <?php comments_template(); ?>
 <?php endwhile; else: ?>
 
-		<h1 class="title">Not Found</h1>
-		<p>I'm Sorry,  you are looking for something that is not here. Try a different search.</p>
+		<h1 class="title">No se ha encontrado</h1>
+		<p>Lo siento, usted está buscando algo que no está aquí. Intenta una búsqueda diferente.</p>
 
 <?php endif; ?>
 
