@@ -297,10 +297,12 @@ padding-bottom:5px;
 	margin:0px 0px 0px 0px;
 	font-size: 12px;
 	overflow:hidden;
-	background:#222;
-	border-top:1px solid #000;
-	border-left:1px solid #000;	
-	border-right:1px solid #000;		
+	/* original --> background:#222; */
+	background:#d4a965;
+	/* original --> border-top:1px solid #000; */
+	border-top:1px solid #a3752d;
+	border-left:1px solid #a3752d;	
+	border-right:1px solid #a3752d;		
 	}
 	
 #submenu {
