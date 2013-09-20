@@ -20,8 +20,8 @@
 
 <?php endwhile; else: ?>
 
-		<h1 class="title">Not Found</h1>
-		<p>I'm Sorry,  you are looking for something that is not here. Try a different search.</p>
+		<h1 class="title">No se ha encontrado</h1>
+		<p>Lo siento, usted está buscando algo que no está aquí. Intenta una búsqueda diferente.</p>
 
 <?php endif; ?>
 
