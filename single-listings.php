@@ -7,16 +7,16 @@
 
 <div class="post" id="post-<?php the_ID(); ?>">
 <div class="title">
-<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2> 
+<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Enlace permanente a <?php the_title(); ?>"><?php the_title(); ?></a></h2> 
 </div>
 
 <div class="propsmeta clearfix">
-	<div class="propslist"><span>Price - </span> <span class="propval"> <?php $price=get_post_meta($post->ID, 'wtf_price', true); echo $price; ?></span></div>
-	<div class="propslist"><span>Location - </span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'location', '', ' ', '' ); ?></span></div>
-	<div class="propslist"><span>Property - </span> <span class="propval"><?php echo get_the_term_list( $post->ID, 'property', '', ' ', '' ); ?></span></div>
-	<div class="propslist"><span>Bedrooms - </span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'bedrooms', '', ' ', '' ); ?></span></div>
-	<div class="propslist"><span>Bath - </span> <span class="propval"> <?php $bath=get_post_meta($post->ID, 'wtf_bath', true); echo $bath; ?></span></div>
-	<div class="propslist"><span>Garage - </span> <span class="propval"> <?php $garage=get_post_meta($post->ID, 'wtf_garage', true); echo $garage; ?></span></div>
+	<div class="propslist"><span>Precio - </span> <span class="propval"> <?php $price=get_post_meta($post->ID, 'wtf_price', true); echo $price; ?></span></div>
+	<div class="propslist"><span>Ubicación - </span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'location', '', ' ', '' ); ?></span></div>
+	<div class="propslist"><span>Propiedad - </span> <span class="propval"><?php echo get_the_term_list( $post->ID, 'property', '', ' ', '' ); ?></span></div>
+	<div class="propslist"><span>Cuartos - </span> <span class="propval"> <?php echo get_the_term_list( $post->ID, 'bedrooms', '', ' ', '' ); ?></span></div>
+	<div class="propslist"><span>Baño(s) - </span> <span class="propval"> <?php $bath=get_post_meta($post->ID, 'wtf_bath', true); echo $bath; ?></span></div>
+	<div class="propslist"><span>Garaje(s) - </span> <span class="propval"> <?php $garage=get_post_meta($post->ID, 'wtf_garage', true); echo $garage; ?></span></div>
 </div>
 
 <div class="entry">
@@ -44,7 +44,7 @@
 </div>
 
 <div class="intlink clearfix">
-<span class="intext"> Are you interested in this property - <?php $pid=get_post_meta($post->ID, 'wtf_pid', true); echo $pid; ?> ? </span> <span class="intbutt"> <a href="mailto:<?php echo the_author_meta('user_email'); ?>?Subject=<?php the_title(); ?> [<?php $pid=get_post_meta($post->ID, 'wtf_pid', true); echo $pid; ?>] ">Contact me now</a> </span>
+<span class="intext"> ¿Está interesado en esta propiedad? - <?php $pid=get_post_meta($post->ID, 'wtf_pid', true); echo $pid; ?> ? </span> <span class="intbutt"> <a href="mailto:<?php echo the_author_meta('user_email'); ?>?Subject=<?php the_title(); ?> [<?php $pid=get_post_meta($post->ID, 'wtf_pid', true); echo $pid; ?>] ">Pongase en contacto ahora!</a> </span>
 </div>
 
 
@@ -54,8 +54,8 @@
 <?php comments_template(); ?>
 <?php endwhile; else: ?>
 
-		<h1 class="title">Not Found</h1>
-		<p>I'm Sorry,  you are looking for something that is not here. Try a different search.</p>
+		<h1 class="title">No se ha encontrado</h1>
+		<p>Lo siento, usted está buscando algo que no está aquí. Intenta una búsqueda diferente.</p>
 
 <?php endif; ?>
 
