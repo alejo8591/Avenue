@@ -15,7 +15,7 @@
 <div class="post spost" id="post-<?php the_ID(); ?>">
 
 <div class="title">
-		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Enlace permanente a <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 </div>
 
 <div class="entry">
@@ -32,16 +32,16 @@
 <?php else : ?>
 
 <div class="title">
-		<h2>Your search - <?php the_search_query();?> - did not match any entries.</h2>
+		<h2>Su búsqueda - <?php the_search_query();?> - no coincide con ninguna entrada.</h2>
 </div>
 
 
 <div class="entry">
-<p>Suggestions:</p>
+<p>Sugerencias:</p>
 <ul>
-   <li>  Make sure all words are spelled correctly.</li>
-   <li>  Try different keywords.</li>
-   <li>  Try more general keywords.</li>
+   <li>  Asegúrese de que todas las palabras estén escritas correctamente.</li>
+   <li>  Pruebe con diferentes palabras clave.</li>
+   <li>  Intente usar palabras más generales.</li>
 </ul>
 </div>
 
