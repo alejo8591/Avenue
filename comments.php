@@ -3,7 +3,7 @@
 		die ('Please do not load this page directly. Thanks!');
 
 	if ( post_password_required() ) { ?>
-		<p class="nocomments">This post is password protected. Enter the password to view comments.</p>
+		<p class="nocomments">Esta entrada está protegida. Introduzca la contraseña para ver los comentarios.</p>
 	<?php
 		return;
 	}
@@ -32,7 +32,7 @@
 
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="nocomments">Comments are closed.</p>
+		<p class="nocomments">Los comentarios están cerrados.</p>
 
 	<?php endif; ?>
 <?php endif; ?>
@@ -49,7 +49,7 @@
 </div>
 
 <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
+<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">Ingresar </a>para escribir un comentario.</p>
 <?php else : ?>
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
@@ -59,10 +59,10 @@
 <p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
 
 <?php else : ?>
-<label for="author">Name <small><?php if ($req) echo "(required)"; ?></small></label>
+<label for="author">Nombre <small><?php if ($req) echo "(required)"; ?></small></label>
 <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 
-<label for="email">Mail <small><?php if ($req) echo "(required)"; ?></small></label>
+<label for="email">Email <small><?php if ($req) echo "(required)"; ?></small></label>
 <input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
 
 <label for="url">Website</label>

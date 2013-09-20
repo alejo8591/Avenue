@@ -5,9 +5,9 @@
 <div id="footer">
 
 <div class="fcred">
-Copyright &copy; <?php echo date('Y');?> <a href="<?php bloginfo('siteurl'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a> - <?php bloginfo('description'); ?>.<br />
+<!-- Copyright &copy; <?php echo date('Y');?> <a href="<?php bloginfo('siteurl'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a> - <?php bloginfo('description'); ?>.<br />
 <?php fflink(); ?> | <a href="http://www.fabthemes.com/<?php echo wp_get_theme(); ?>/" ><?php echo wp_get_theme(); ?> Theme</a>
-</div>	
+</div> -->	
 
 <div class='clear'></div>	
 <?php wp_footer(); ?>

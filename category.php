@@ -5,22 +5,22 @@
 
 		 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 <?php /* If this is a category archive */ if (is_category()) { ?>
-		<h1 class="pagetitle">Archive for the &#8216;<?php echo single_cat_title(); ?>&#8217; Category</h1>
+		<h1 class="pagetitle">Archivo de la &#8216;<?php echo single_cat_title(); ?>&#8217; Categoría</h1>
 
  	  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-		<h1 class="pagetitle">Archive for <?php the_time('F jS, Y'); ?></h1>
+		<h1 class="pagetitle">Archivo para <?php the_time('F jS, Y'); ?></h1>
 
 	 <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-		<h1 class="pagetitle">Archive for <?php the_time('F, Y'); ?></h1>
+		<h1 class="pagetitle">Archivo para <?php the_time('F, Y'); ?></h1>
 
 		<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-		<h1 class="pagetitle">Archive for <?php the_time('Y'); ?></h1>
+		<h1 class="pagetitle">Archivo para <?php the_time('Y'); ?></h1>
 
 	  <?php /* If this is an author archive */ } elseif (is_author()) { ?>
-		<h1 class="pagetitle">Author Archive</h1>
+		<h1 class="pagetitle">Autor del Archivo</h1>
 
 		<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-		<h1 class="pagetitle">Blog Archives</h1>
+		<h1 class="pagetitle">Archivo del Blog</h1>
 		<?php } ?>
 
 
@@ -34,7 +34,7 @@
 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 </div>
 <div class="postmeta">
-	<span class="author">Posted by <?php the_author(); ?> </span> <span class="clock">  <?php the_time('M - j - Y'); ?></span> <span class="comm"><?php comments_popup_link('0 Comment', '1 Comment', '% Comments'); ?></span>
+	<span class="author">Publicado por <?php the_author(); ?> </span> <span class="clock">  <?php the_time('M - j - Y'); ?></span> <span class="comm"><?php comments_popup_link('0 Comment', '1 Comment', '% Comments'); ?></span>
 </div>
 <div class="entry">
 
@@ -52,7 +52,7 @@ if ( has_post_thumbnail() ) { ?>
 
 
 <div class="singleinfo">
-<span class="category">Categories: <?php the_category(', '); ?> </span>
+<span class="category">Categorías: <?php the_category(', '); ?> </span>
 </div>
 
 </div>
@@ -62,8 +62,8 @@ if ( has_post_thumbnail() ) { ?>
 
 <?php else : ?>
 
-	<h1 class="title">Not Found</h1>
-	<p>Sorry, but you are looking for something that isn't here.</p>
+	<h1 class="title">No se ha encontrado</h1>
+	<p>Lo sentimos, pero usted está buscando algo que no está aquí.</p>
 
 <?php endif; ?>
 
