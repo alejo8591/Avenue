@@ -14,7 +14,7 @@ $wp_query->query('post_type=listings'.'&paged='.$paged);
 <div class="archimg">
 
 <?php  if( has_term( 'featured', 'type', $post->ID ) ) { ?>
-<span class="featspan">Arrendamiento</span>
+<span class="featspan">Arriendo</span>
 <?php } else if ( has_term( 'sold', 'type', $post->ID ) ){ ?>
 <span class="soldspan">Venta</span>
 <?php } else if ( has_term( 'reduced', 'type', $post->ID ) ){ ?>
