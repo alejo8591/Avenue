@@ -41,11 +41,11 @@ wp_head();
 	
 	<div id="contactlist">
 		<div class="rphone">
-		<span>Call us</span><br/>
+		<span>Comuníquese</span><br/>
 		<p><?php $my_phone =get_option('aven_my_phone'); echo $my_phone ?></p>
 		</div>
 		<div class="rmail">
-		<span>Mail us</span><br/>
+		<span>Email</span><br/>
 		<p><?php $my_mail =get_option('aven_my_email'); echo $my_mail ?></p>
 		</div>
 	</div>
