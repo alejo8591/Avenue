@@ -36,7 +36,7 @@ register_nav_menus( array(
 
 function fallbackmenu(){ ?>
 			<div id="submenu">
-				<ul><li> Go to Adminpanel > Appearance > Menus to create your menu. You should have WP 3.0+ version for custom menus to work.</li></ul>
+				<ul><li> Ir a AdminPanel> Apariencia> Menús para crear su menú. Usted debe tener WP 3.0 + Versión para los menús personalizados para el trabajo.</li></ul>
 			</div>
 <?php }	
 
@@ -142,7 +142,7 @@ function manage_movies_columns($column_name, $id) {
             $post_terms[] = "<a href='edit.php?post_type=listings&location={$term->slug}'> " . esc_html(sanitize_term_field('name', $term->name, $term->term_id, $taxonomy, 'edit')) . "</a>";
 				echo join( ', ', $post_terms );
 			}
-			else echo '<i>No terms.</i>'; 
+			else echo '<i>Ningún término.</i>'; 
 		break;
 		
 		case 'type':
@@ -154,7 +154,7 @@ function manage_movies_columns($column_name, $id) {
             $post_terms[] = "<a href='edit.php?post_type=listings&property={$term->slug}'> " . esc_html(sanitize_term_field('name', $term->name, $term->term_id, $taxonomy, 'edit')) . "</a>";
 				echo join( ', ', $post_terms );
 			}
-			else echo '<i>No terms.</i>'; 
+			else echo '<i>Ningún término.</i>'; 
 		break;
 		
 		default:
