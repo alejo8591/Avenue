@@ -38,7 +38,7 @@
 	</div>
 
 <div class="inpabox">
-<span class="sprice"><?php $price=get_post_meta($post->ID, 'wtf_price', true); echo $price; ?></span><span class="sint"><a href="<?php the_permalink() ?>">View</a></span>
+<span class="sprice"><?php $price=get_post_meta($post->ID, 'wtf_price', true); echo $price; ?></span><span class="sint"><a href="<?php the_permalink() ?>">Ver más...</a></span>
 
 </div>
 </div>
