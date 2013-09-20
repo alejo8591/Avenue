@@ -220,12 +220,14 @@ margin:0 auto;
 
 #masthead{
 height:140px;
+/* background:url(images/masthead.png) repeat-x; */
 background:url(images/masthead.png) repeat-x;
 }
 
 #head{
 width:1000px;
 margin:0 auto;
+background:url(images/west.png) no-repeat;
 }
 
 #top{
@@ -234,7 +236,7 @@ height:100px;
 
 #blogname{
 width:400px;
-float:left;	
+float:left;	 
 }
 
 #blogname h1{
@@ -260,7 +262,8 @@ background:url(images/phone.png) left center no-repeat;
 height:50px;
 margin-top:30px;
 padding:10px 0px 0px 60px;
-color:#eee;
+/* original --> color:#eee; */
+color:#333;
 font-size:12px;
 font-family:arial;
 }
@@ -278,7 +281,8 @@ background:url(images/email.png) left center no-repeat;
 height:50px;
 margin-top:30px;
 padding:10px 0px 0px 60px;
-color:#eee;
+/* original --> color:#eee; */
+color:#333;
 font-size:12px;
 font-family:arial;
 }
@@ -672,12 +676,14 @@ margin-bottom:20px;
 
 h3.sidetitle {
 font-family:BebasNeueRegular;
-color:#fff;
+/* original --> color:#fff; */
+color:#333;
 font-size:18px;
 margin-bottom:10px;
 font-weight:400;
 padding:10px 10px 7px 10px;
-background:#333535;
+/* original ---> background:#333535; */
+background:#d4a965;
 }
 
 p.listin,p.listir{
@@ -732,12 +738,14 @@ float:left;
 
 h3.sidetitl {
 font-family:BebasNeueRegular;
-color:#fff;
+/* original --> color:#fff; */
+color:#333;
 font-size:18px;
 margin-bottom:10px;
 font-weight:400;
 padding:10px 10px 7px 10px;
-background:#333535;
+/* original ---> background:#333535; */
+background:#d4a965;
 }
 
 .sidebox {
