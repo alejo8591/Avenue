@@ -23,11 +23,11 @@
 
 <div class="archimg">
 <?php  if( has_term( 'featured', 'type', $post->ID ) ) { ?>
-<span class="featspan">Featured</span>
+<span class="featspan">Arriendo</span>
 <?php } else if ( has_term( 'sold', 'type', $post->ID ) ){ ?>
-<span class="soldspan">Sold</span>
+<span class="soldspan">Venta</span>
 <?php } else if ( has_term( 'reduced', 'type', $post->ID ) ){ ?>
-<span class="redspan">Reduced</span>
+<span class="redspan">Remate</span>
 <?php } ?>
 
 <?php
